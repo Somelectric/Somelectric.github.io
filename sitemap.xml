@@ -1,3 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://somelectric.github.io/mymkdocs/</loc>
+         <lastmod>2025-03-25</lastmod>
+    </url>
+    <url>
+         <loc>https://somelectric.github.io/mymkdocs/about/</loc>
+         <lastmod>2025-03-25</lastmod>
+    </url>
+    <url>
+         <loc>https://somelectric.github.io/mymkdocs/ASABE/redesign%20requirement/</loc>
+         <lastmod>2025-03-25</lastmod>
+    </url>
+    <url>
+         <loc>https://somelectric.github.io/mymkdocs/Tutorial/java/</loc>
+         <lastmod>2025-03-25</lastmod>
+    </url>
+    <url>
+         <loc>https://somelectric.github.io/mymkdocs/Tutorial/cpp_chapter/c%2B%2B/</loc>
+         <lastmod>2025-03-25</lastmod>
+    </url>
+    <url>
+         <loc>https://somelectric.github.io/mymkdocs/Tutorial/cpp_chapter/chapter1/</loc>
+         <lastmod>2025-03-25</lastmod>
+    </url>
 </urlset>
