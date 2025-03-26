@@ -483,7 +483,29 @@
   
   
     <li class="md-nav__item">
-      <a href="ASABE/redesign%20requirement/" class="md-nav__link">
+      <a href="ASABE/abstract/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ASABE/redesign_requirement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -585,18 +607,32 @@
         width="100%" height="500" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
 </iframe>
 
-<p><button onclick="loadVideo()">点击播放视频</button></p>
+<p><button onclick="toggleVideo()" style="border: none; background: none; cursor: pointer;">
+    <svg id="play-icon" width="60" height="60" viewBox="0 0 24 24" fill="black">
+        <polygon id="play-shape" points="6,3 20,12 6,21"></polygon>
+    </svg>
+</button></p>
 <div id="video-container"></div>
+<!-- 这里的 div 负责动态插入 iframe --><script>
+function toggleVideo() {
+    let videoContainer = document.getElementById('video-container');
+    let playShape = document.getElementById('play-shape');
 
-<script>
-function loadVideo() {
-    document.getElementById('video-container').innerHTML = `
-      <iframe src="https://player.bilibili.com/player.html?aid=707666395&bvid=BV1BQ4y1u7SP&cid=1379519094&p=1&playerLang=cn&pauseOnHover=1" 
-              width="800" height="450" 
-              frameborder="0" 
-              allowfullscreen="true">
-      </iframe>
-    `;
+    if (videoContainer.innerHTML === "") {
+        // 创建 iframe 播放视频
+        videoContainer.innerHTML = `
+          <iframe id="bili-video" src="https://player.bilibili.com/player.html?aid=707666395&bvid=BV1BQ4y1u7SP&cid=1379519094&p=1&playerLang=cn&pauseOnHover=1" 
+                  width="800" height="450" 
+                  frameborder="0" 
+                  allowfullscreen="true">
+          </iframe>
+        `;
+        playShape.setAttribute("points", "6,6 18,6 18,18 6,18"); // 变成暂停方块
+    } else {
+        // 移除 iframe，让视频停止播放
+        videoContainer.innerHTML = "";
+        playShape.setAttribute("points", "6,3 20,12 6,21"); // 变回播放三角形
+    }
 }
 </script>
 
