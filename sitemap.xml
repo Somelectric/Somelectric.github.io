@@ -2,54 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://somelectric.github.io/mymkdocs/</loc>
-         <lastmod>2025-03-31</lastmod>
+         <lastmod>2025-04-01</lastmod>
     </url>
     <url>
          <loc>https://somelectric.github.io/mymkdocs/about/</loc>
-         <lastmod>2025-03-31</lastmod>
+         <lastmod>2025-04-01</lastmod>
     </url>
     <url>
          <loc>https://somelectric.github.io/mymkdocs/ASABE/abstract/</loc>
-         <lastmod>2025-03-31</lastmod>
+         <lastmod>2025-04-01</lastmod>
     </url>
     <url>
          <loc>https://somelectric.github.io/mymkdocs/ASABE/ASABE_1/abstract/</loc>
-         <lastmod>2025-03-31</lastmod>
+         <lastmod>2025-04-01</lastmod>
     </url>
     <url>
          <loc>https://somelectric.github.io/mymkdocs/ASABE/ASABE_1/redesign_requirement/</loc>
-         <lastmod>2025-03-31</lastmod>
+         <lastmod>2025-04-01</lastmod>
     </url>
     <url>
          <loc>https://somelectric.github.io/mymkdocs/ASABE/DFH/abstract/</loc>
-         <lastmod>2025-03-31</lastmod>
+         <lastmod>2025-04-01</lastmod>
     </url>
     <url>
          <loc>https://somelectric.github.io/mymkdocs/ASABE/DFH/april_plan/</loc>
-         <lastmod>2025-03-31</lastmod>
+         <lastmod>2025-04-01</lastmod>
+    </url>
+    <url>
+         <loc>https://somelectric.github.io/mymkdocs/Essays/3_31/</loc>
+         <lastmod>2025-04-01</lastmod>
     </url>
     <url>
          <loc>https://somelectric.github.io/mymkdocs/Tutorial/java/</loc>
-         <lastmod>2025-03-31</lastmod>
+         <lastmod>2025-04-01</lastmod>
     </url>
     <url>
          <loc>https://somelectric.github.io/mymkdocs/Tutorial/cpp_chapter/c%2B%2B/</loc>
-         <lastmod>2025-03-31</lastmod>
+         <lastmod>2025-04-01</lastmod>
     </url>
     <url>
          <loc>https://somelectric.github.io/mymkdocs/Tutorial/cpp_chapter/chapter1/</loc>
-         <lastmod>2025-03-31</lastmod>
+         <lastmod>2025-04-01</lastmod>
     </url>
     <url>
          <loc>https://somelectric.github.io/mymkdocs/course_summary/second_year2/abstract_c2/</loc>
-         <lastmod>2025-03-31</lastmod>
+         <lastmod>2025-04-01</lastmod>
+    </url>
+    <url>
+         <loc>https://somelectric.github.io/mymkdocs/course_summary/second_year2/preagr/</loc>
+         <lastmod>2025-04-01</lastmod>
     </url>
     <url>
          <loc>https://somelectric.github.io/mymkdocs/course_summary/third_year1/abstract_c3/</loc>
-         <lastmod>2025-03-31</lastmod>
+         <lastmod>2025-04-01</lastmod>
     </url>
     <url>
          <loc>https://somelectric.github.io/mymkdocs/course_summary/third_year2/abstract_c4/</loc>
-         <lastmod>2025-03-31</lastmod>
+         <lastmod>2025-04-01</lastmod>
     </url>
 </urlset>
