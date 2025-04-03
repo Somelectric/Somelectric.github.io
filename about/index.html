@@ -1034,6 +1034,13 @@
 <p><audio autoplay loop hidden>
   <source src="../music/joke.mp3" type="audio/mpeg">
 </audio></p>
+<p><audio id="myAudio" src="../music/joke.mp3">
+</audio></p>
+<script>
+document.addEventListener('touchstart', function() {
+    document.getElementById('myAudio').play();
+}, { once: true }); // 仅触发一次，避免重复播放
+</script>
 
 
 
