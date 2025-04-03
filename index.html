@@ -258,24 +258,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      你好不好
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      二级标题
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1084,24 +1066,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      你好不好
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      二级标题
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1127,15 +1091,6 @@
 <li><a href="course_summary/third_year2/abstract_c4/">大三下课程</a></li>
 <li><a href="ASABE/ASABE_1/abstract/">ARC</a></li>
 </ul>
-<h2 id="_2">你好不好</h2>
-<h2 id="_3">二级标题</h2>
-<ol>
-<li>打篮球</li>
-<li>踢足球</li>
-<li>下象棋</li>
-</ol>
-<p>```</p>
-<p>```</p>
 <p>$$
    \frac{a}{b}
    $$</p>
@@ -1145,23 +1100,48 @@
 <iframe src="pdf/midtest1.pdf" width="100%" height="600px"></iframe>
 
 <!-- 以下为显示视频的代码，利用iframe -->
-<iframe src="https://player.bilibili.com/player.html?aid=707666395&bvid=BV1BQ4y1u7SP&cid=1379519094&p=1&autoplay=0&playerLang=cn&pauseOnHover=1" 
-        width="100%" height="500" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
-</iframe>
 
-<!-- 以下为显示视频的代码，利用iframe，但可以利用svg图折叠视频 -->
-<p><button onclick="toggleVideo()" style="border: none; background: none; cursor: pointer;">
-    <svg id="play-icon" width="60" height="60" viewBox="0 0 24 24" fill="black">
-        <polygon id="play-shape" points="6,3 20,12 6,21"></polygon>
-    </svg>
-</button></p>
+<style>
+  .play-container {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+  }
+  .play-text {
+      margin-right: 10px;
+      font-size: 18px;
+      color: black;  /* 取消默认蓝色 */
+      text-decoration: none; /* 去除下划线 */
+      font-weight: bold; /* 可选：加粗 */
+  }
+  .play-text:hover {
+      color: red; /* 鼠标悬停变色（可选） */
+  }
+  .play-button {
+      border: none;
+      background: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+  }
+</style>
+
+<div class="play-container" onclick="toggleVideo()">
+    <span class="play-text">播放按钮</span>
+    <button class="play-button">
+        <svg id="play-icon" width="60" height="60" viewBox="0 0 24 24" fill="black">
+            <polygon id="play-shape" points="6,3 20,12 6,21"></polygon>
+        </svg>
+    </button>
+</div>
+
 <div id="video-container"></div>
 <!-- 这里的 div 负责动态插入 iframe --><script>
 function toggleVideo() {
     let videoContainer = document.getElementById('video-container');
     let playShape = document.getElementById('play-shape');
 
-    if (videoContainer.innerHTML === "") {
+    if (videoContainer.innerHTML.trim() === "") {
         // 创建 iframe 播放视频
         videoContainer.innerHTML = `
           <iframe id="bili-video" src="https://player.bilibili.com/player.html?aid=707666395&bvid=BV1BQ4y1u7SP&cid=1379519094&p=1&playerLang=cn&pauseOnHover=1" 
